@@ -34,7 +34,11 @@
 
   #page-home {
     min-height: 100vh;
-    background: #fff;
+    background-color: #fff;
+    background-image:
+      linear-gradient(to right, #f0f0f0 1px, transparent 1px),
+      linear-gradient(to bottom, #f0f0f0 1px, transparent 1px);
+    background-size: 22px 22px;
     overflow: hidden;
     position: relative;
     padding-top: 20px;
@@ -125,10 +129,10 @@
     width: 100%;
     max-width: 340px;
     height: 64px;
-    background: #111;
+    background: #1a1a1a;
     color: #fff;
     border: none;
-    border-radius: 100px;
+    border-radius: 16px;
     font-size: 17px;
     font-weight: 700;
     font-family: var(--font);
@@ -138,11 +142,14 @@
     align-items: center;
     justify-content: center;
     gap: 12px;
-    transition: opacity 0.15s;
-    box-shadow: none;
+    box-shadow: 5px 5px 0px #FF889B;
+    transition: transform 0.1s, box-shadow 0.1s;
   }
 
-  .btn-start:active { opacity: 0.75; }
+  .btn-start:active {
+    transform: translate(3px, 3px);
+    box-shadow: 2px 2px 0px #FF889B;
+  }
 
   .btn-start-icon {
     width: 26px;
@@ -167,6 +174,11 @@
   #page-quiz {
     min-height: 100vh;
     padding-bottom: 40px;
+    background-color: #fff;
+    background-image:
+      linear-gradient(to right, #f0f0f0 1px, transparent 1px),
+      linear-gradient(to bottom, #f0f0f0 1px, transparent 1px);
+    background-size: 22px 22px;
   }
 
   .quiz-header {
@@ -329,6 +341,11 @@
   #page-result {
     min-height: 100vh;
     padding-bottom: 60px;
+    background-color: #fff;
+    background-image:
+      linear-gradient(to right, #f0f0f0 1px, transparent 1px),
+      linear-gradient(to bottom, #f0f0f0 1px, transparent 1px);
+    background-size: 22px 22px;
   }
 
   .result-header {
@@ -526,13 +543,13 @@
         <!-- 动物滚动舞台 -->
   <div class="animals-stage">
 
-    <!-- 第一行：向左滚动（杜宾、边牧、金毛、比格、阿拉斯加、比熊、柴犬、德牧 × 2） -->
+    <!-- 第一行：向左滚动 -->
     <div class="animals-row row-1">
       <div class="animal-cell"><img src="assets/暹罗猫.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
       <div class="animal-cell"><img src="assets/孟加拉猫.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
       <div class="animal-cell"><img src="assets/布偶猫.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
       <div class="animal-cell"><img src="assets/橘猫.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
-      <div class="animal-cell"><img src="assets/阿比西尼亚猫.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
+      <div class="animal-cell"><img src="assets/德文猫.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
       <div class="animal-cell"><img src="assets/美短.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
       <div class="animal-cell"><img src="assets/波斯猫.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
       <div class="animal-cell"><img src="assets/金渐层.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
@@ -540,19 +557,19 @@
       <div class="animal-cell"><img src="assets/孟加拉猫.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
       <div class="animal-cell"><img src="assets/布偶猫.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
       <div class="animal-cell"><img src="assets/橘猫.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
-      <div class="animal-cell"><img src="assets/阿比西尼亚猫.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
+      <div class="animal-cell"><img src="assets/德文猫.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
       <div class="animal-cell"><img src="assets/美短.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
       <div class="animal-cell"><img src="assets/波斯猫.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
       <div class="animal-cell"><img src="assets/金渐层.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
     </div>
 
-    <!-- 第二行：向右滚动（德牧、哈士奇、拉布拉多、泰迪、柯基、松狮、萨摩耶、腊肠 × 2） -->
+    <!-- 第二行：向右滚动 -->
     <div class="animals-row row-2">
       <div class="animal-cell"><img src="assets/英短.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
       <div class="animal-cell"><img src="assets/蓝猫.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
       <div class="animal-cell"><img src="assets/缅因猫.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
       <div class="animal-cell"><img src="assets/无毛猫.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
-      <div class="animal-cell"><img src="assets/苏格兰折耳猫.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
+      <div class="animal-cell"><img src="assets/狸花猫.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
       <div class="animal-cell"><img src="assets/挪威森林猫.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
       <div class="animal-cell"><img src="assets/加菲猫.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
       <div class="animal-cell"><img src="assets/土耳其安哥拉猫.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
@@ -560,18 +577,18 @@
       <div class="animal-cell"><img src="assets/蓝猫.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
       <div class="animal-cell"><img src="assets/缅因猫.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
       <div class="animal-cell"><img src="assets/无毛猫.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
-      <div class="animal-cell"><img src="assets/苏格兰折耳猫.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
+      <div class="animal-cell"><img src="assets/狸花猫.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
       <div class="animal-cell"><img src="assets/挪威森林猫.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
       <div class="animal-cell"><img src="assets/加菲猫.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
       <div class="animal-cell"><img src="assets/土耳其安哥拉猫.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
     </div>
 
-    <!-- 第三行：向左滚动（16只全部品种 × 2） -->
+    <!-- 第三行：向左滚动 -->
     <div class="animals-row row-3">
       <div class="animal-cell"><img src="assets/布偶猫.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
       <div class="animal-cell"><img src="assets/英短.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
       <div class="animal-cell"><img src="assets/橘猫.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
-      <div class="animal-cell"><img src="assets/苏格兰折耳猫.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
+      <div class="animal-cell"><img src="assets/狸花猫.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
       <div class="animal-cell"><img src="assets/缅因猫.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
       <div class="animal-cell"><img src="assets/波斯猫.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
       <div class="animal-cell"><img src="assets/无毛猫.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
@@ -579,7 +596,7 @@
       <div class="animal-cell"><img src="assets/布偶猫.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
       <div class="animal-cell"><img src="assets/英短.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
       <div class="animal-cell"><img src="assets/橘猫.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
-      <div class="animal-cell"><img src="assets/苏格兰折耳猫.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
+      <div class="animal-cell"><img src="assets/狸花猫.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
       <div class="animal-cell"><img src="assets/缅因猫.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
       <div class="animal-cell"><img src="assets/波斯猫.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
       <div class="animal-cell"><img src="assets/无毛猫.png" style="width:96px;height:96px;image-rendering:pixelated;object-fit:contain"></div>
@@ -716,7 +733,7 @@ const questions = [
     hint: "这是我的地方",
     options: [
       { key: "A", text: "亮爪子，明确表态", dim: "T" },
-      { key: "B", text: "我不舒服，但我不知道怎么开口", dim: "F" },
+      { key: "B", text: "心里有点不好受，但懒得计较", dim: "F" },
       { key: "C", text: "悄悄走开，假装没看见", dim: "I" }
     ]
   },
@@ -735,7 +752,7 @@ const questions = [
     options: [
       { key: "A", text: "随便跑，管它几点", dim: "P" },
       { key: "B", text: "克制一下，这不是活动时间", dim: "J" },
-      { key: "C", text: "叫醒所有人陪我玩", dim: "E" }
+      { key: "C", text: "在家里大声走几圈，宣告我的存在", dim: "E" }
     ]
   },
   {
@@ -743,7 +760,7 @@ const questions = [
     hint: "不想继续了",
     options: [
       { key: "A", text: "停下来，直接走掉，不用解释", dim: "T" },
-      { key: "B", text: "虽然累，但看他们那么开心，再陪一会", dim: "F" },
+      { key: "B", text: "累是累，但有什么东西让我舍不得离开", dim: "F" },
       { key: "C", text: "躲到它们够不到的地方", dim: "I" }
     ]
   },
@@ -769,7 +786,7 @@ const questions = [
     text: "我做了一件很了不起的事，比如从柜子上跳下来，我会？",
     hint: "刚才表现不错",
     options: [
-      { key: "A", text: "环顾四周，确认有没有人看到", dim: "E" },
+      { key: "A", text: "有点想让谁看见，这一跳值得被目击", dim: "E" },
       { key: "B", text: "在心里记录一下，不用告诉任何人", dim: "I" },
       { key: "C", text: "客观评估：落点偏了两厘米，下次改进", dim: "T" }
     ]
@@ -784,12 +801,12 @@ const questions = [
     ]
   },
   {
-    text: "最后一题：我最理想的猫生是？",
+    text: "我觉得我这只猫——",
     hint: "认真想想，这是你真实的向往",
     options: [
-      { key: "A", text: "有固定角落、固定作息、不被打扰", dim: "I" },
-      { key: "B", text: "认识很多猫、每天有人陪、永远热闹", dim: "E" },
-      { key: "C", text: "没有计划，哪里舒服就去哪里，睡到自然醒", dim: "P" }
+      { key: "A", text: "自己待着也挺好的那种，不需要有人懂我在想什么", dim: "I" },
+      { key: "B", text: "必须有人看着我，不被注意的话感觉自己不太存在", dim: "E" },
+      { key: "C", text: "今天是这样，明天说不准，随它去吧", dim: "P" }
     ]
   }
 ];
@@ -803,71 +820,71 @@ const results = {
     subname: "还没开口我就决定了",
     quote: "不是我霸道，是你们太慢。",
     traits: ["天生首领", "开口即决定", "效率至上", "自信到失礼"],
-    desc: "你不是不关心别人，你只是比所有人都快想到答案。会议还没开始，你已经知道结论；计划还没讨论，你已经开始执行。别人叫你霸道，你只是叫它：效率。",
+    desc: "暹罗猫是出了名的话唠领袖——声音大、意见多、从不怀疑自己是房间里最聪明的那个。你不是不关心别人，你只是比所有人都快想到答案。还没开口，结论已经在你脑子里了。别人说你霸道，你只是叫它：效率。",
     dog: "siamese"
   },
   // ENTP - 孟加拉猫
   "把规则都踢翻了的孟加拉猫": {
     subname: "凭什么不能这样想",
-    quote: "规则是给没脑子的猫准备的。我不一样。",
-    traits: ["脑洞永远开着", "杠精本精", "创意过载", "挑战一切"],
-    desc: "你不是故意反驳，你只是真的觉得还可以再想一想。喜欢把「不可能」翻过来研究背面，讨论起来停不下来，但执行嘛……那是下一只猫的事。",
+    quote: "规则是给懒得思考的猫准备的。",
+    traits: ["永远在挑战", "杠精本精", "脑洞过载", "说到停不下来"],
+    desc: "孟加拉猫有豹纹，有野性，喜欢把所有东西翻个底朝天——不是破坏，是研究。你不是故意反驳，你只是真的觉得还有另一种可能。喜欢把事情拆开来看背面，讨论起来没有终点。执行嘛——那是明天的事。",
     dog: "bengal"
   },
   // ENFJ - 布偶猫
   "比你更知道你要什么的布偶猫": {
     subname: "全场情绪总承包",
-    quote: "我不需要你说，我看你眼神就知道。",
-    traits: ["人精附体", "情绪雷达", "天生的倾听者", "累但不说"],
-    desc: "你永远知道谁今天心情不好，谁需要一个抱抱，谁只是假装没事。你用温柔撑起整个群体，代价是：别人睡了，你还在想他们过得好不好。",
+    quote: "我不需要你说，我看你眼神就知道了。",
+    traits: ["情绪雷达满格", "天生的照顾者", "温柔是武器", "累但不说"],
+    desc: "布偶猫会跟着你从厨房走到卧室，你在哪它在哪——不是黏，是它真的想知道你还好不好。你永远知道谁需要一个抱抱，谁只是假装没事。用温柔撑起整个群体，代价是：别人都睡了，你还在想他们过得好不好。",
     dog: "ragdoll"
   },
-  // ENFP - 橘猫
-  "看到什么都要凑过去的橘猫": {
-    subname: "热情是我的基本设定",
-    quote: "哇这个！哇那个！哇等等那是什么！",
-    traits: ["好奇心爆炸", "三分钟热度一百次", "自来熟专家", "停不下来"],
-    desc: "你对世界充满兴趣，每件事都能让你兴奋。纸袋、日落、刚认识的猫——都值得凑过去研究一下。能量无限，方向不定，但所到之处都留下了温度。",
-    dog: "orange"
+  // ENFP - 德文猫
+  "跳进来又跳出去的德文猫": {
+    subname: "好奇心是我的引擎",
+    quote: "哇这个！哇那个！等等那是什么？",
+    traits: ["好奇心不灭", "能量乱窜", "自来熟第一名", "停不下来"],
+    desc: "德文猫长着一对大耳朵和永远睁圆的眼睛，对任何动静都能立刻弹射起来——世界对它来说每天都是新的。你对一切都充满兴趣，纸袋、窗帘、刚认识的猫——都值得扑过去研究一下。能量无限，方向不定，但所到之处都留下了温度。",
+    dog: "devonrex"
   },
-  // ESTJ - 阿比西尼亚猫
-  "把作息表刻进基因的阿比西尼亚猫": {
-    subname: "纪律是最高美德",
+  // ESTJ - 缅因猫
+  "把全家都管起来的缅因猫": {
+    subname: "我说了算但我是为你好",
     quote: "早上七点吃饭，不是七点零一分。",
     traits: ["规律即正义", "执行力满格", "不容商量", "靠谱得可怕"],
-    desc: "你有时间表，有规则，有秩序。不是控制欲，是责任感。你知道什么时间做什么事，也清楚别人该做什么。被你管着的猫一开始不服气，后来都悄悄感谢你。",
-    dog: "abyssinian"
+    desc: "缅因猫是猫里的大家长，体型最大、最稳、会主动把小猫和乱糟糟的局面都管起来。你有时间表，有规则，有秩序。不是控制欲，是责任感。被你管着的猫一开始不服气，后来都悄悄感谢你。",
+    dog: "mainecoon"
   },
   // ESTP - 美短
   "说好午睡结果跳上冰箱的美短": {
     subname: "行动力比脑子快三秒",
     quote: "先上去再说，掉下来也是一种经历。",
-    traits: ["行动派代表", "现场反应极快", "风险什么的再说", "永远在搞事"],
-    desc: "你不喜欢计划，你喜欢此刻。反应快、胆子大、现场应变能力拉满。有时候会搞出一点小混乱，但你总能笑着着陆。",
+    traits: ["行动派代表", "现场反应极快", "风险先不管", "永远在搞事"],
+    desc: "美短是街猫血统打磨出来的，什么场合都能接得住，陌生人摸一下也不慌——天生的处变不惊。你不喜欢计划，你喜欢此刻。反应快、胆子大、现场应变能力拉满。有时候会搞出一点小混乱，但你总能笑着着陆。",
     dog: "americanshorthair"
   },
-  // ESFJ - 波斯猫
-  "随时监控全家动态的波斯猫": {
-    subname: "你们好我才好",
-    quote: "你今天吃了吗？你昨天说的那件事，后来怎样了？",
-    traits: ["天生操心体质", "连接一切", "拒绝不了任何人", "群体情感中枢"],
-    desc: "你喜欢在场，喜欢知道每个人的状态，喜欢有人需要你。不是八卦，是关心。你用持续的在乎维系着关系网络，偶尔也会累，但离开了又不放心。",
-    dog: "persian"
+  // ESFJ - 无毛猫
+  "凑过来嗅你手的无毛猫": {
+    subname: "关心你是我的本能",
+    quote: "你今天不对劲，我闻出来了。",
+    traits: ["天生操心体质", "热情黏人", "拒绝不了任何人", "情感中枢"],
+    desc: "无毛猫没有毛发隔离，皮肤直接贴着你——它就是要离你最近，感受到你，也被你感受到。你喜欢在场，喜欢知道每个人的状态，喜欢有人需要你。不是黏，是关心。你用持续的在乎维系着关系网络，偶尔累，但离开了又不放心。",
+    dog: "sphynx"
   },
-  // ESFP - 金渐层
-  "必须坐在镜头正中间的金渐层": {
+  // ESFP - 橘猫
+  "必须坐在镜头正中间的橘猫": {
     subname: "天生要被欣赏",
     quote: "我一进来，气氛就不一样了，对吧？",
     traits: ["自带聚光灯", "活在当下", "拒绝无聊", "表演型人格满级"],
-    desc: "你天生是焦点。不是装，是真的发光。你活在当下，享受每一个好玩的瞬间，不爱计划，不爱沉重，只爱让所有人也跟着你一起开心。",
-    dog: "goldengradient"
+    desc: "橘猫的名声早就在网上传遍了——爱吃、爱玩、自带喜感，走进哪里哪里就开始热闹。你天生是焦点。不是刻意，是真的发光。你活在当下，享受每一个好玩的瞬间，只爱让所有人跟你一起开心。",
+    dog: "orange"
   },
   // INTJ - 英短
   "假装不在乎的英短": {
     subname: "冷漠是我的保护色",
-    quote: "我不是不喜欢你，我只是在观察你值不值得我喜欢。",
-    traits: ["社恐晚期", "表面冷漠", "内心戏极多", "标准设定极高"],
-    desc: "你看起来什么都无所谓，其实脑子里早就把所有情况推演了一遍。不是冷漠，是在等值得出手的时机。能进你内心的位置有限，但进来的都知道：值了。",
+    quote: "我不是不喜欢你，我只是在判断你值不值得我喜欢。",
+    traits: ["表面冷漠", "内心戏极多", "标准极高", "进来了就值了"],
+    desc: "英短坐在那里什么都不做，也有一种我已经把你看透了的气场——圆脸、铜眼、表情永远淡定。你看起来什么都无所谓，其实脑子里早把所有情况推演了一遍。不是冷漠，是在等值得出手的时机。能进你内心的位置有限，但进来的都知道：值了。",
     dog: "britishshorthair"
   },
   // INTP - 蓝猫
@@ -875,56 +892,56 @@ const results = {
     subname: "大型行走思维宫殿",
     quote: "我没在发呆，我在想一个很重要的问题。",
     traits: ["永远在想", "逻辑迷宫玩家", "外表平静内部风暴", "偶尔掉线"],
-    desc: "你的脑子从不休息，但身体有时候忘了跟上。喜欢把问题拆开、重组、再推演一遍。和你聊天会突然变成哲学讨论，你自己也不知道为什么走到这一步。",
+    desc: "俄罗斯蓝猫会安静地观察你很久，然后在你最意想不到的时候跳到你腿上——它的逻辑自洽，只是不解释。你的脑子从不休息，但身体有时候忘了跟上。喜欢把问题拆开、重组、再推演一遍。和你聊天会突然变成哲学讨论，谁也不知道怎么走到这一步的。",
     dog: "russianblue"
   },
-  // INFJ - 缅因猫
-  "一直在微笑但没人懂为什么的缅因猫": {
-    subname: "温柔是我最锋利的武器",
+  // INFJ - 土耳其安哥拉猫
+  "沉默着就把你看透了的土耳其安哥拉猫": {
+    subname: "温柔但有刀",
     quote: "我早就看出来了，只是没说。",
-    traits: ["微笑刺客", "洞察力超标", "温柔但有边界", "理想主义者"],
-    desc: "你温和，但不软。你早在所有人察觉之前就已经看透了局面，只是选择不说。你对人有深刻的理解，但自己却总是最孤独的那个。懂你的人极少，但无比珍贵。",
-    dog: "mainecoon"
+    traits: ["洞察力超标", "温柔有刀", "理想主义者", "懂你的人极少"],
+    desc: "土耳其安哥拉是最古老的长毛猫之一，安静、通透，眼神里有一种很难描述的它都知道。你温和，但不软。早在所有人察觉之前就已经看透了局面，只是选择不说。你对人有深刻的理解，但自己却总是最孤独的那个。",
+    dog: "angora"
   },
-  // INFP - 无毛猫
-  "你不懂的无毛猫": {
-    subname: "精神世界深不见底",
-    quote: "你以为我在无聊，我其实在体验存在本身。",
-    traits: ["精神世界建筑师", "感受力超载", "理想主义重症", "轻易不示人"],
-    desc: "你有一个别人进不去的内部世界，丰盛、细腻、偶尔过于沉重。对的人面前你会完全打开，错的人面前你宁可一直保持神秘。不是奇怪，是深度太高。",
-    dog: "sphynx"
+  // INFP - 金渐层
+  "住在自己世界里的金渐层": {
+    subname: "深度不需要解释",
+    quote: "你以为我在发呆，我其实在感受整个宇宙。",
+    traits: ["精神世界建筑师", "感受力超载", "轻易不示人", "深度不需要解释"],
+    desc: "金渐层披着一身金色长毛，看起来像会发光的云——但它不随便让人摸，只给值得的人靠近。你有一个别人进不去的内部世界，丰盛、细腻、偶尔过于沉重。对的人面前你会完全打开，错的人面前你宁可保持安静。不是难懂，是深度太高。",
+    dog: "goldengradient"
   },
-  // ISTJ - 苏格兰折耳猫
-  "饭点差一秒都不行的苏格兰折耳猫": {
+  // ISTJ - 狸花猫
+  "饭点差一秒都不行的狸花猫": {
     subname: "规矩是我给世界的礼物",
     quote: "说好七点，七点零一分都是迟到。",
     traits: ["守时原教旨主义", "执行力封神", "不容马虎", "可靠到令人感动"],
-    desc: "你说到做到，从不食言。有计划，有标准，有原则。别人觉得你死板，你觉得那叫负责任。这个世界需要更多像你这样的猫，才不会乱成一团。",
-    dog: "scottishfold"
+    desc: "狸花猫是中国最原始的本土猫，几千年和人类一起生活——皮实、可靠、从不无故出事。你说到做到，从不食言。有计划，有标准，有原则。别人觉得你死板，你觉得那叫负责任。这个世界需要更多像你这样的猫。",
+    dog: "chinesetabby"
   },
   // ISTP - 挪威森林猫
   "不需要你懂的挪威森林猫": {
     subname: "沉默系独立解题专家",
     quote: "我不解释，因为解释了你也不一定懂。",
-    traits: ["独立行动", "话少但有用", "动手大于动口", "冷静到别人以为你没感情"],
-    desc: "你不爱多说，喜欢直接搞定。遇到问题不焦虑，遇到麻烦不吵架，拆开来看一看，然后解决掉。别人还在讨论的时候，你已经做完了。",
+    traits: ["独立行动", "话少但有用", "动手大于动口", "冷静到位"],
+    desc: "挪威森林猫在北欧雪地里独自生活了几百年，什么险境都自己搞定，不需要谁来救它。你不爱多说，喜欢直接搞定。遇到问题不焦虑，遇到麻烦不吵架，拆开来看一看，然后解决掉。别人还在讨论的时候，你已经做完了。",
     dog: "norwegianforest"
   },
-  // ISFJ - 加菲猫
-  "记住你昨天心情不好的加菲猫": {
+  // ISFJ - 波斯猫
+  "记住你昨天心情不好的波斯猫": {
     subname: "我永远记得你的小事",
     quote: "你上次说你不喜欢那个味道，我记着呢。",
-    traits: ["细节记忆超能力", "默默在意", "最不显眼的守护者", "温柔且有韧性"],
-    desc: "你不轰轰烈烈，但你记住了每一个细节。朋友随口说过的偏好，你三个月后还记着。你用最安静的方式关心所有人，不求回报，只希望他们过得好。",
-    dog: "garfield"
+    traits: ["细节记忆超能力", "默默在意", "最安静的守护者", "温柔且有韧性"],
+    desc: "波斯猫不吵不闹，就这么安静地待在旁边——但你要是难过，它会悄悄靠过来，用身体的重量告诉你它在。你不轰轰烈烈，但你记住了每一个细节。朋友随口说过的偏好，你三个月后还记着。你用最安静的方式关心所有人，不求回报。",
+    dog: "persian"
   },
-  // ISFP - 土耳其安哥拉猫
-  "急不起来的土耳其安哥拉猫": {
+  // ISFP - 加菲猫
+  "急不起来的加菲猫": {
     subname: "岁月静好就是答案",
-    quote: "急什么，阳光还在，我在，就够了。",
+    quote: "急什么，饭还热着，我在，就够了。",
     traits: ["慢生活哲学家", "感官享受专家", "不被催动", "平静到让人羡慕"],
-    desc: "你不是拖延，你是真的觉得没必要那么赶。好的东西值得慢慢感受，好的日子值得好好活着。你不需要宏大的意义，此刻的阳光和安静就已经是答案。",
-    dog: "angora"
+    desc: "加菲猫天生一张关我什么事的脸，但它知道阳光什么时候照到哪块地板——懂得怎么把日子过得刚刚好。你不是拖延，你是真的觉得没必要那么赶。好的东西值得慢慢感受，好的日子值得好好活着。此刻的阳光和安静就已经是答案。",
+    dog: "garfield"
   }
 };
 
@@ -935,19 +952,19 @@ const dogSVGs = {
   siamese: `<img src="assets/暹罗猫.png" style="width:130px;height:130px;image-rendering:pixelated;object-fit:contain">`,
   bengal: `<img src="assets/孟加拉猫.png" style="width:130px;height:130px;image-rendering:pixelated;object-fit:contain">`,
   ragdoll: `<img src="assets/布偶猫.png" style="width:130px;height:130px;image-rendering:pixelated;object-fit:contain">`,
-  orange: `<img src="assets/橘猫.png" style="width:130px;height:130px;image-rendering:pixelated;object-fit:contain">`,
-  abyssinian: `<img src="assets/阿比西尼亚猫.png" style="width:130px;height:130px;image-rendering:pixelated;object-fit:contain">`,
+  devonrex: `<img src="assets/德文猫.png" style="width:130px;height:130px;image-rendering:pixelated;object-fit:contain">`,
+  mainecoon: `<img src="assets/缅因猫.png" style="width:130px;height:130px;image-rendering:pixelated;object-fit:contain">`,
   americanshorthair: `<img src="assets/美短.png" style="width:130px;height:130px;image-rendering:pixelated;object-fit:contain">`,
-  persian: `<img src="assets/波斯猫.png" style="width:130px;height:130px;image-rendering:pixelated;object-fit:contain">`,
-  goldengradient: `<img src="assets/金渐层.png" style="width:130px;height:130px;image-rendering:pixelated;object-fit:contain">`,
+  sphynx: `<img src="assets/无毛猫.png" style="width:130px;height:130px;image-rendering:pixelated;object-fit:contain">`,
+  orange: `<img src="assets/橘猫.png" style="width:130px;height:130px;image-rendering:pixelated;object-fit:contain">`,
   britishshorthair: `<img src="assets/英短.png" style="width:130px;height:130px;image-rendering:pixelated;object-fit:contain">`,
   russianblue: `<img src="assets/蓝猫.png" style="width:130px;height:130px;image-rendering:pixelated;object-fit:contain">`,
-  mainecoon: `<img src="assets/缅因猫.png" style="width:130px;height:130px;image-rendering:pixelated;object-fit:contain">`,
-  sphynx: `<img src="assets/无毛猫.png" style="width:130px;height:130px;image-rendering:pixelated;object-fit:contain">`,
-  scottishfold: `<img src="assets/苏格兰折耳猫.png" style="width:130px;height:130px;image-rendering:pixelated;object-fit:contain">`,
+  angora: `<img src="assets/土耳其安哥拉猫.png" style="width:130px;height:130px;image-rendering:pixelated;object-fit:contain">`,
+  goldengradient: `<img src="assets/金渐层.png" style="width:130px;height:130px;image-rendering:pixelated;object-fit:contain">`,
+  chinesetabby: `<img src="assets/狸花猫.png" style="width:130px;height:130px;image-rendering:pixelated;object-fit:contain">`,
   norwegianforest: `<img src="assets/挪威森林猫.png" style="width:130px;height:130px;image-rendering:pixelated;object-fit:contain">`,
-  garfield: `<img src="assets/加菲猫.png" style="width:130px;height:130px;image-rendering:pixelated;object-fit:contain">`,
-  angora: `<img src="assets/土耳其安哥拉猫.png" style="width:130px;height:130px;image-rendering:pixelated;object-fit:contain">`
+  persian: `<img src="assets/波斯猫.png" style="width:130px;height:130px;image-rendering:pixelated;object-fit:contain">`,
+  garfield: `<img src="assets/加菲猫.png" style="width:130px;height:130px;image-rendering:pixelated;object-fit:contain">`
 };
 
 // ──────────────────────────────────────────────
@@ -980,8 +997,8 @@ const quizDogPixels = [
   `<img src="assets/布偶猫.png" style="width:40px;height:40px;image-rendering:pixelated;object-fit:contain">`,
   // 橘猫
   `<img src="assets/橘猫.png" style="width:40px;height:40px;image-rendering:pixelated;object-fit:contain">`,
-  // 阿比西尼亚猫
-  `<img src="assets/阿比西尼亚猫.png" style="width:40px;height:40px;image-rendering:pixelated;object-fit:contain">`,
+  // 德文猫
+  `<img src="assets/德文猫.png" style="width:40px;height:40px;image-rendering:pixelated;object-fit:contain">`,
   // 美短
   `<img src="assets/美短.png" style="width:40px;height:40px;image-rendering:pixelated;object-fit:contain">`,
   // 波斯猫
@@ -996,8 +1013,8 @@ const quizDogPixels = [
   `<img src="assets/缅因猫.png" style="width:40px;height:40px;image-rendering:pixelated;object-fit:contain">`,
   // 无毛猫
   `<img src="assets/无毛猫.png" style="width:40px;height:40px;image-rendering:pixelated;object-fit:contain">`,
-  // 苏格兰折耳猫
-  `<img src="assets/苏格兰折耳猫.png" style="width:40px;height:40px;image-rendering:pixelated;object-fit:contain">`,
+  // 狸花猫
+  `<img src="assets/狸花猫.png" style="width:40px;height:40px;image-rendering:pixelated;object-fit:contain">`,
   // 挪威森林猫
   `<img src="assets/挪威森林猫.png" style="width:40px;height:40px;image-rendering:pixelated;object-fit:contain">`,
   // 加菲猫
@@ -1085,25 +1102,25 @@ function calcResult() {
     "ENTJ": "已经替你想好了的暹罗猫",
     "ENTP": "把规则都踢翻了的孟加拉猫",
     "ENFJ": "比你更知道你要什么的布偶猫",
-    "ENFP": "看到什么都要凑过去的橘猫",
-    "ESTJ": "把作息表刻进基因的阿比西尼亚猫",
+    "ENFP": "跳进来又跳出去的德文猫",
+    "ESTJ": "把全家都管起来的缅因猫",
     "ESTP": "说好午睡结果跳上冰箱的美短",
-    "ESFJ": "随时监控全家动态的波斯猫",
-    "ESFP": "必须坐在镜头正中间的金渐层",
+    "ESFJ": "凑过来嗅你手的无毛猫",
+    "ESFP": "必须坐在镜头正中间的橘猫",
     "INTJ": "假装不在乎的英短",
     "INTP": "盯着墙发呆发了半小时的蓝猫",
-    "INFJ": "一直在微笑但没人懂为什么的缅因猫",
-    "INFP": "你不懂的无毛猫",
-    "ISTJ": "饭点差一秒都不行的苏格兰折耳猫",
+    "INFJ": "沉默着就把你看透了的土耳其安哥拉猫",
+    "INFP": "住在自己世界里的金渐层",
+    "ISTJ": "饭点差一秒都不行的狸花猫",
     "ISTP": "不需要你懂的挪威森林猫",
-    "ISFJ": "记住你昨天心情不好的加菲猫",
-    "ISFP": "急不起来的土耳其安哥拉猫"
+    "ISFJ": "记住你昨天心情不好的波斯猫",
+    "ISFP": "急不起来的加菲猫"
   };
   return typeMap[type] || "假装不在乎的英短";
 }
 
 function formatDogName(name) {
-  const breeds = ['土耳其安哥拉猫','苏格兰折耳猫','阿比西尼亚猫','挪威森林猫','孟加拉猫','布偶猫','加菲猫','金渐层','缅因猫','波斯猫','暹罗猫','无毛猫','英短','蓝猫','美短','橘猫'];
+  const breeds = ['土耳其安哥拉猫','挪威森林猫','孟加拉猫','德文猫','布偶猫','加菲猫','狸花猫','金渐层','缅因猫','波斯猫','暹罗猫','无毛猫','英短','蓝猫','美短','橘猫'];
   for (const breed of breeds) {
     if (name.endsWith(breed)) {
       const prefix = name.slice(0, name.length - breed.length);
